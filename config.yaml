@@ -1,0 +1,47 @@
+# The Poof Palace Configuration
+
+# --- API Keys & Secrets (Use placeholders) ---
+SHOPIFY_API_KEY: "YOUR_SHOPIFY_API_KEY"
+SHOPIFY_API_SECRET: "YOUR_SHOPIFY_API_SECRET"
+SHOPIFY_STORE_URL: "your-store.myshopify.com"
+PRINTFUL_API_KEY: "YOUR_PRINTFUL_API_KEY"
+
+# --- Social Media API Keys ---
+# Instagram API credentials (from Meta Developer Dashboard)
+INSTAGRAM_ACCESS_TOKEN: "EAAXf2Lu0glYBPSev0vrZBoQzUEZAGeDbziZBfodNU9fWvuLubSgtq9gkNGyijDiU2KySxd7nnEgpZBt7yFU289GEomTMnbGb1PzdBGE6WTP427GK2zQw1xBs8NuISBWf7t4d3QvCKr9XvSljN00R6qM4ve9XZCgNyXCL8d57KByAicBKESnTgZArqtcjC84H4l5ojOS3bu3rP94BQnSQXmwjaDakkraT0z2c1A2blTIC8ZD"
+INSTAGRAM_USER_ID: "17841404308415548"
+# TikTok API credentials (from TikTok Developer Portal)
+# Get these from: https://developers.tiktok.com/
+TIKTOK_ACCESS_TOKEN: "YOUR_TIKTOK_ACCESS_TOKEN"
+TIKTOK_CLIENT_KEY: "aw49l9wq1jtwrb29"
+TIKTOK_CLIENT_SECRET: "BxUVbq3NYKd84GFUme3dUHqDUOLqlu4J"
+
+# Twitter API v2 credentials (from Twitter Developer Portal)
+# Get these from: https://developer.twitter.com/en/portal/dashboard
+TWITTER_API_KEY: "YXR3cFpIRTNlQlBWaGgzbnNmSzQ6MTpjaQ"
+TWITTER_API_SECRET: "EQXD_tQcIUDfzyhhVfK6lImTNBCSEAPPAl1oIf4g5sHrQfr7kC"
+TWITTER_ACCESS_TOKEN: "1763822226548412416-fo1GtrbPYHpHKtKff1cQV0l3igltZf"
+TWITTER_ACCESS_SECRET: "WWBSg92PDkchcANObYgv9fPdH23dx9LdaJB32bas3Elxu"
+TWITTER_BEARER_TOKEN: "AAAAAAAAAAAAAAAAAAAAAMSi3wEAAAAALhHZLUWpNIMNQO9aPin3Xb6ucPc%3DOuzweHpHbKMcGiHQ0QPCpeigBBvY12GQ8c0brqs15eBZS59oT0"
+
+# --- Local Service Endpoints ---
+OLLAMA_API_BASE_URL: "http://127.0.0.1:11434"
+COMFYUI_API_BASE_URL: "http://127.0.0.1:8188"
+
+# --- File Paths ---
+LORE_BIBLE_PATH: "lore_bible.txt"
+IMAGE_OUTPUT_DIR: "output/images/"
+LOG_FILE_PATH: "output/logs/palace.log"
+
+# --- AI Model & Style Configuration ---
+OLLAMA_MODEL: "llama3:8b"
+COMFYUI_LORA_NAME: "LilPoof_Storybook_v1.safetensors"
+COMFYUI_LORA_STRENGTH: 0.8
+COMFYUI_CHECKPOINT_NAME: "sd_xl_base_1.0.safetensors"
+POSITIVE_PROMPT_SUFFIX: "whimsical storybook illustration, soft golden light, warm colors, gentle textures, masterpiece, best quality"
+NEGATIVE_PROMPT: "(ugly, deformed, blurry), harsh shadows, digital art, photorealistic, watermark, text, signature"
+
+# --- Brand Identity ---
+BRAND_NAME: "The Poof Palace"
+MASCOT_NAME: "Lil Poof"
+INSTAGRAM_HANDLE: "@ThePoofPalace"

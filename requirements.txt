@@ -1,0 +1,5 @@
+requests
+PyYAML
+apscheduler
+ShopifyAPI
+python-dotenv
