@@ -1,0 +1,105 @@
+# The Poof Palace - Git Ignore File
+# ==================================
+# This file protects sensitive information from being committed to version control
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.development
+*.env
+secrets.json
+credentials.json
+service-account.json
+
+# API keys and sensitive config files
+config_secrets.yaml
+api_keys.txt
+tokens.txt
+
+# Google Cloud credentials
+gcloud/
+google-cloud-credentials.json
+application_default_credentials.json
+
+# Python cache and virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+
+# Generated content (optional - you might want to track some of these)
+output/images/*.png
+output/images/*.jpg
+output/images/*.jpeg
+output/videos/*.mp4
+output/audio/*.mp3
+
+# Keep the directory structure but ignore content
+!output/images/.gitkeep
+!output/logs/.gitkeep
+!output/videos/.gitkeep
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json

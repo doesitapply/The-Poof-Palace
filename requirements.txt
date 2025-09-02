@@ -1,5 +1,9 @@
 requests
 PyYAML
 apscheduler
-ShopifyAPI
 python-dotenv
+# Google Cloud Libraries
+google-generativeai
+google-cloud-aiplatform
+# E-commerce (for future features)
+ShopifyAPI

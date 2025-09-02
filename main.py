@@ -1,17 +1,21 @@
-import yaml
 import time
 from apscheduler.schedulers.blocking import BlockingScheduler
 from modules.orchestrator import Orchestrator
-
-def load_config(path="config.yaml"):
-    """Loads the YAML configuration file."""
-    with open(path, 'r') as f:
-        return yaml.safe_load(f)
+from modules.secure_config import load_secure_config
 
 def main():
     """Main execution function."""
     print("--- Initializing The Poof Palace Engine ---")
-    config = load_config()
+    
+    # Load secure configuration
+    try:
+        config = load_secure_config()
+        print("✅ Secure configuration loaded successfully")
+    except Exception as e:
+        print(f"❌ Failed to load secure configuration: {e}")
+        print("Please run: python setup_security.py")
+        return
+    
     orchestrator = Orchestrator(config)
     
     scheduler = BlockingScheduler()
